@@ -1,0 +1,54 @@
+:root {
+    /*global css variable*/
+    --lightest: #f0c3ff;
+    --light: #9a26a2;
+    --dark: #561a45;
+    --darker: #2b022c;
+    --darkest: #160517;
+}
+
+body {
+    margin: 10px;
+    border: 0;
+    padding: 0;
+    background-color: var(--bg);
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+
+main {
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.5em;
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+.light-theme {
+    --bg: var(--lightest);
+    --fontColor: var(--darkest);
+    --btnBg: var(--darkest);
+    --btnFontColor: var(--lightest);
+}
+
+.dark-theme {
+    --bg: var(--darkest);
+    --fontColor: var(--lightest);
+    --btnBg: var(--lightest);
+    --btnFontColor: var(--darkest);
+}
