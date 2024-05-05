@@ -1,0 +1,36 @@
+body {
+    width: fit-content;
+}
+
+.ingredientCard {
+    padding: 10px;
+    height: auto;
+    max-width: 300px;
+    background-color: antiquewhite;
+    border-radius: 5%;
+    border: 2px solid black;
+}
+
+.ingredientCard>img {
+    max-width: 100%;
+}
+
+.ingredientCard>table {
+    width: 100%;
+    padding: 5px;
+    margin: 2px;
+    border: 1px solid black;
+    border-radius: 5%;
+    background-color: beige;
+}
+
+.costCalculator {
+    margin: 10px;
+    text-align: center;
+}
+
+#amount {
+    width: 75px;
+}
+
+.btn {}

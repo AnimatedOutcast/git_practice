@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/ingredient.css">
+    <title>Ingredient</title>
+</head>
+
+<body>
+    <main>
+        <div class="ingredientCard">
+            <img src="resources/images/flour.png"><!--ingredient thumbnail-->
+            <table>
+                <tr><!--ingredient name-->
+                    <td>
+                        <label for="ingName">Ingredient:</label>
+                    </td>
+                    <td>
+                        <span id="ingName"></span>
+                    </td>
+                </tr>
+                <tr><!--ingredient cost-->
+                    <td>
+                        <label for="ingCost">Cost:</label>
+                    </td>
+                    <td>
+                        $<span id="ingCost"></span>
+                    </td>
+                </tr>
+                <tr><!--net weight-->
+                    <td>
+                        <label for="netWeight">Net Weight:</label>
+                    </td>
+                    <td>
+                        <span id="netWeight"></span>
+                    </td>
+                </tr>
+                <tr><!--total servings-->
+                    <td>
+                        <label for="totalServings">Total Servings:</label>
+                    </td>
+                    <td>
+                        <span id="totalServings"></span>
+                    </td>
+                </tr>
+                <tr><!--serving size-->
+                    <td>
+                        <label for="servingSize">Serving Size:</label>
+                    </td>
+                    <td>
+                        <span id="servingSize"></span>
+                    </td>
+                </tr>
+                <tr><!--calories per serving-->
+                    <td>
+                        <label for="caloriesPerServing">Calories per Serving:</label>
+                    </td>
+                    <td>
+                        <span id="caloriesPerServing"></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="costCalculator">
+            <input id="amount" type="number">
+            <select name="unitSelect" id="unitSelect">
+                <option value="gram">gram(s)</option>
+                <option value="ounce">ounce(s)</option>
+            </select>
+            <button class="btn" onClick="calculateCost()">calculate</button><br />
+            <span id="result>"></span>
+        </div>
+    </main>
+    <script src="resources/scripts/ingredient.js"></script>
+</body>
+
+</html>
