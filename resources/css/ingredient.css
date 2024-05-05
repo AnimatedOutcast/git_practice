@@ -33,4 +33,7 @@ body {
     width: 75px;
 }
 
-.btn {}
+#result {
+    margin: 10px;
+    text-align: center;
+}
